@@ -1,0 +1,19 @@
+<form id="add-player" ng-submit="addPlayer()">
+    <div class="row">
+        <div class="large-12 columns">
+           <fieldset>
+                <legend>Add a new Player</legend>
+                <div class="row collapse">
+                    <div class="small-10 columns">
+                        <label for="name">
+                            <input type="text" name="name" placeholder="Player Name" ng-model="player" />
+                        </label>
+                    </div>
+                    <div class="small-2 columns">
+                        <input type="submit" class="button postfix" value="Add" />
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</form>

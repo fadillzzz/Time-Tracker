@@ -1,0 +1,13 @@
+{
+    "path": {
+        "main": "app",
+        "js": "js",
+        "css": "css",
+        "fonts": "fonts"
+    },
+    "src": {
+        "js": "js",
+        "css": "css"
+    },
+    "port": 9000
+}

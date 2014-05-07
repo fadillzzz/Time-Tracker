@@ -1,0 +1,54 @@
+<h1>Player Listing</h1>
+<table class="large-12">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Play Time</td>
+            <td>Points</td>
+            <td>Multiplier</td>
+            <td>Actions</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="ng-cloak" ng-repeat="player in players">
+            <td>{{ player.getName() }}</td>
+            <td>{{ player.getTime().getHours() }}:{{ player.getTime().getMinutes() }}:{{ player.getTime().getSeconds() }}</td>
+            <td>{{ player.getPoints().getPoints() }}<!-- Well, this is awkward --></td>
+            <td>{{ player.getPoints().getMultiplier() }}</td>
+            <td class="action-control">
+                <ul class="button-group">
+                    <li>
+                        <button class="tiny" title="Toggle timer" ng-class='{success: player.isClockedIn(), alert: ! player.isClockedIn()}' ng-click="player.isClockedIn() ? player.clockOut() : player.clockIn()">
+                            <i class="fa fa-clock-o"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tiny success" title="Increase point" ng-click="player.getPoints().increasePointBy(1)">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tiny alert" title="Decrease point" ng-click="player.getPoints().increasePointBy(-1)">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tiny success" title="Increase multiplier" ng-click="player.getPoints().increaseMultiplier()">
+                            <i class="fa fa-arrow-up"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tiny alert" title="Decrease multiplier" ng-click="player.getPoints().decreaseMultiplier()">
+                            <i class="fa fa-arrow-down"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tiny alert" title="Remove player" ng-click="removePlayer(player.getName())">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,23 @@
+{
+  "name": "TimeTracker",
+  "version": "0.0.1",
+  "description": "It's Just a Fad time tracker",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fadillzzz/Time-Tracker"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-concat": "~2.2.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-jshint": "~1.5.1",
+    "connect": "~2.14.3",
+    "gulp-minify-css": "~0.3.0",
+    "gulp": "~3.5.6"
+  }
+}

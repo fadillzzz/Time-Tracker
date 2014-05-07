@@ -1,0 +1,27 @@
+{
+  "name": "Time Tracker",
+  "version": "0.0.1",
+  "authors": [
+    "Fad <fadillzzz@gmail.com>"
+  ],
+  "description": "It's Just a Fad time tracker",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "foundation": "~5.2.1",
+    "angular": "~1.2.15",
+    "angular-route": "~1.2.15",
+    "font-awesome": "~4.0.3"
+  }
+}

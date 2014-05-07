@@ -1,0 +1,10 @@
+{
+    "camelcase": true,
+    "curly": true,
+    "indent": 4,
+    "noarg": true,
+    "quotmark": "single",
+    "unused": true,
+    "trailing": true,
+    "exported": ["pad"]
+}
