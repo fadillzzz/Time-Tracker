@@ -110,7 +110,8 @@ TimeTrackerModel.factory('Points', ['$interval', function ($interval)
 
         this.start = function ()
         {
-            promise = $interval(function () {
+            promise = $interval(function ()
+            {
                 self.increasePoint();
             }, 1000);
         };

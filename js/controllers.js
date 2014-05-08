@@ -28,7 +28,7 @@ TimeTrackerControllers.controller('PlayerListController', [
             $scope.players = playerList;
         });
 
-        $scope.removePlayer = function(player)
+        $scope.removePlayer = function (player)
         {
             PlayerRepository.removePlayer(player);
         };

@@ -20,7 +20,8 @@ TimeTracker.config(['$routeProvider', function ($routeProvider)
 
 TimeTracker.run(['$rootScope', '$location', function ($rootScope, $location)
 {
-    $rootScope.$on('$locationChangeSuccess', function () {
+    $rootScope.$on('$locationChangeSuccess', function ()
+    {
         $rootScope.activeLink = $location.path() === '/list';
     });
 }]);
