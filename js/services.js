@@ -12,9 +12,8 @@ TimeTrackerServices.service('PlayerRepository', [
             if (locatePlayer(player) === false) {
                 player = new Player(player);
                 playerList.push(player);
+                $rootScope.$broadcast('playerChanges', playerList);
             }
-
-            $rootScope.$broadcast('playerChanges', playerList);
 
             return playerList;
         };
