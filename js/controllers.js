@@ -5,12 +5,13 @@ TimeTrackerControllers.controller('AddPlayerController', [
     'PlayerRepository',
     function ($scope, PlayerRepository)
     {
-        $scope.addPlayer = function ()
+        $scope.addPlayer = function (player)
         {
-            if ($scope.player) {
+            if (player) {
                 PlayerRepository.addPlayer($scope.player);
-                $scope.player = '';
             }
+
+            $scope.player = '';
         };
     }
 ]);
