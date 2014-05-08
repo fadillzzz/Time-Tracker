@@ -9,9 +9,8 @@ TimeTrackerServices.service('PlayerRepository', [
 
         this.addPlayer = function(player)
         {
-            player = new Player(player);
-
             if (locatePlayer(player) === false) {
+                player = new Player(player);
                 playerList.push(player);
             }
 
