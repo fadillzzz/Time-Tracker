@@ -76,3 +76,9 @@ gulp.task('serve', ['watch'], function () {
 });
 
 gulp.task('default', ['js', 'css', 'fonts']);
+
+// Used by karma
+exports.js = paths.js.src;
+exports.js = exports.js.slice(0, exports.js.length - 1);
+exports.js[exports.js.length - 2] = exports.js[exports.js.length - 1];
+exports.js = exports.js.slice(0, exports.js.length - 1);
