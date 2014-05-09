@@ -76,11 +76,6 @@ TimeTrackerModel.factory('Points', ['$interval', function ($interval)
             promise = null,
             multiplier = 1;
 
-        this.increasePoint = function ()
-        {
-            points += multiplier;
-        };
-
         this.increasePointBy = function (increment)
         {
             points += increment * scale;
@@ -110,10 +105,7 @@ TimeTrackerModel.factory('Points', ['$interval', function ($interval)
 
         this.start = function ()
         {
-            promise = $interval(function ()
-            {
-                self.increasePoint();
-            }, 1000);
+            promise = $interval(increasePoint, 1000);
         };
 
         this.stop = function ()
@@ -121,6 +113,11 @@ TimeTrackerModel.factory('Points', ['$interval', function ($interval)
             $interval.cancel(promise);
             promise = null;
         };
+
+        function increasePoint()
+        {
+            points += multiplier;
+        }
     };
 }]);
 
