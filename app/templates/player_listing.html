@@ -18,32 +18,32 @@
             <td class="action-control">
                 <ul class="button-group">
                     <li>
-                        <button class="tiny" title="Toggle timer" ng-class='{success: player.isClockedIn(), alert: ! player.isClockedIn()}' ng-click="player.isClockedIn() ? player.clockOut() : player.clockIn()">
+                        <button class="tiny" tooltip="Toggle timer" ng-class='{success: player.isClockedIn(), alert: ! player.isClockedIn()}' ng-click="player.isClockedIn() ? player.clockOut() : player.clockIn()">
                             <i class="fa fa-clock-o"></i>
                         </button>
                     </li>
                     <li>
-                        <button class="tiny success" title="Increase point" ng-click="player.getPoints().increasePointBy(1)">
+                        <button class="tiny success" tooltip="Increase point" ng-click="player.getPoints().increasePointBy(1)">
                             <i class="fa fa-plus"></i>
                         </button>
                     </li>
                     <li>
-                        <button class="tiny alert" title="Decrease point" ng-click="player.getPoints().increasePointBy(-1)">
+                        <button class="tiny alert" tooltip="Decrease point" ng-click="player.getPoints().increasePointBy(-1)">
                             <i class="fa fa-minus"></i>
                         </button>
                     </li>
                     <li>
-                        <button class="tiny success" title="Increase multiplier" ng-click="player.getPoints().increaseMultiplier()">
+                        <button class="tiny success" tooltip="Increase multiplier" ng-click="player.getPoints().increaseMultiplier()">
                             <i class="fa fa-arrow-up"></i>
                         </button>
                     </li>
                     <li>
-                        <button class="tiny alert" title="Decrease multiplier" ng-click="player.getPoints().decreaseMultiplier()">
+                        <button class="tiny alert" tooltip="Decrease multiplier" ng-click="player.getPoints().decreaseMultiplier()">
                             <i class="fa fa-arrow-down"></i>
                         </button>
                     </li>
                     <li>
-                        <button class="tiny alert" title="Remove player" ng-click="removePlayer(player.getName())">
+                        <button class="tiny alert" tooltip="Remove player" ng-click="removePlayer(player.getName())">
                             <i class="fa fa-times"></i>
                         </button>
                     </li>

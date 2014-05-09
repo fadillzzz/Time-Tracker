@@ -13,7 +13,7 @@ var gulp = require('gulp'),
                 bowerPath + '/angular/angular.js',
                 bowerPath + '/angular-route/angular-route.js',
                 bowerPath + '/modernizr/modernizr.js',
-                bowerPath + '/foundation/js/foundation.js',
+                bowerPath + '/angular-foundation/mm-foundation-tpls.js',
                 app.src.js + '/wrapper/start.js',
                 app.src.js + '/*.js',
                 app.src.js + '/wrapper/end.js'

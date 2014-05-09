@@ -3,6 +3,7 @@ var TimeTracker = angular.module('TimeTracker', [
     'TimeTrackerModel',
     'TimeTrackerControllers',
     'TimeTrackerServices',
+    'mm.foundation'
 ]);
 
 TimeTracker.config(['$routeProvider', function ($routeProvider)
