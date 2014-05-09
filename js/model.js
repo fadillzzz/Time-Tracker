@@ -88,7 +88,7 @@ TimeTrackerModel.factory('Points', ['$interval', function ($interval)
 
         this.getPoints = function ()
         {
-            return points / 3600;
+            return points / scale;
         };
 
         this.increaseMultiplier = function ()
