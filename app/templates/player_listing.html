@@ -13,7 +13,7 @@
         <tr class="ng-cloak" ng-repeat="player in players">
             <td>{{ player.getName() }}</td>
             <td>{{ player.getTime().getHours() }}:{{ player.getTime().getMinutes() }}:{{ player.getTime().getSeconds() }}</td>
-            <td>{{ player.getPoints().getPoints() }}<!-- Well, this is awkward --></td>
+            <td>{{ player.getPoints().getPoints().toFixed(2) }}<!-- Well, this is awkward --></td>
             <td>{{ player.getPoints().getMultiplier() }}</td>
             <td class="action-control">
                 <ul class="button-group">
